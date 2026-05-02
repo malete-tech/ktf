@@ -22,7 +22,7 @@ export function PartnersHero() {
            transition={{ duration: 1, ease: "easeOut" }}
         >
           <span className="text-[10px] font-bold tracking-[0.6em] text-secondary uppercase mb-8 block">
-             ECOSYSTEM_ACCELERATION // 2025_2026
+             ECOSYSTEM_ACCELERATION // 2026
           </span>
           <h1 className="text-5xl sm:text-7xl lg:text-8xl font-display font-medium leading-[0.95] tracking-tighter mb-12 uppercase">
             Build the Future. <br />

@@ -25,16 +25,16 @@ function PageTitleManager() {
 
   useEffect(() => {
     const titles: Record<string, string> = {
-      '/': 'KWASU Tech Festival | KTF 2025',
-      '/register': 'Registration Terminal | KTF 2025',
-      '/experience': 'Deep-Dive Experience | KTF 2025',
-      '/awards': 'Awards & Nominations | KTF 2025',
-      '/merch': 'Official Merchandise | KTF 2025',
-      '/partners': 'Partnership & Sponsorship | KTF 2025',
-      '/history': 'Our Story | KTF 2025',
+      '/': 'KWASU Tech Festival | KTF 2026',
+      '/register': 'Registration Terminal | KTF 2026',
+      '/experience': 'Deep-Dive Experience | KTF 2026',
+      '/awards': 'Awards & Nominations | KTF 2026',
+      '/merch': 'Official Merchandise | KTF 2026',
+      '/partners': 'Partnership & Sponsorship | KTF 2026',
+      '/history': 'Our Story | KTF 2026',
     };
 
-    document.title = titles[pathname] || 'KWASU Tech Festival | KTF 2025';
+    document.title = titles[pathname] || 'KWASU Tech Festival | KTF 2026';
   }, [pathname]);
 
   return null;
