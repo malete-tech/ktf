@@ -78,7 +78,7 @@ function PageTitleManager() {
     if (ogDescription) ogDescription.setAttribute('content', currentSEO.description);
 
     const ogImage = document.querySelector('meta[property="og:image"]');
-    if (ogImage) ogImage.setAttribute('content', `https://kwasutechfest.com${currentSEO.image}`);
+    if (ogImage) ogImage.setAttribute('content', `https://kwasutechfestival.com.ng${currentSEO.image}`);
 
     const twitterTitle = document.querySelector('meta[property="twitter:title"]');
     if (twitterTitle) twitterTitle.setAttribute('content', currentSEO.title);
