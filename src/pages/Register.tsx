@@ -156,7 +156,7 @@ export function Register() {
   };
 
   return (
-    <div className="bg-background pb-24 min-h-screen">
+    <main className="bg-background pb-24 min-h-screen">
       {/* 1. HERO SECTION */}
       <section className="container mx-auto px-4 pt-32 mb-24 max-w-7xl">
         <div className="max-w-3xl">
@@ -545,6 +545,6 @@ export function Register() {
           </div>
         )}
       </AnimatePresence>
-    </div>
+    </main>
   );
 }

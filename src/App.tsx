@@ -24,17 +24,74 @@ function PageTitleManager() {
   const { pathname } = useLocation();
 
   useEffect(() => {
-    const titles: Record<string, string> = {
-      '/': 'KWASU Tech Festival | KTF 2026',
-      '/register': 'Registration Terminal | KTF 2026',
-      '/experience': 'Deep-Dive Experience | KTF 2026',
-      '/awards': 'Awards & Nominations | KTF 2026',
-      '/merch': 'Official Merchandise | KTF 2026',
-      '/partners': 'Partnership & Sponsorship | KTF 2026',
-      '/history': 'Our Story | KTF 2026',
+    const seoData: Record<string, { title: string; description: string; image: string }> = {
+      '/': {
+        title: 'KWASU Tech Festival | KTF 2026',
+        description: 'Welcome to KTF 2026 - The premier student-led tech ecosystem in North Central Nigeria. Join us for innovation, networking, and excellence.',
+        image: '/ktf.png'
+      },
+      '/register': {
+        title: 'Registration Terminal | KTF 2026',
+        description: 'Secure your spot at KTF 2026. Register now to be part of the largest student tech festival.',
+        image: '/events.jpg'
+      },
+      '/experience': {
+        title: 'Deep-Dive Experience | KTF 2026',
+        description: 'Explore the immersive activities, workshops, and technical deep-dives planned for KTF 2026.',
+        image: '/events (3).jpg'
+      },
+      '/awards': {
+        title: 'Awards & Nominations | KTF 2026',
+        description: 'Nominate outstanding innovators and projects for the KTF 2026 Awards Registry.',
+        image: '/pitch battle.jpg'
+      },
+      '/merch': {
+        title: 'Official Merchandise | KTF 2026',
+        description: 'Get your official KTF 2026 gear. Exclusive hoodies, tees, and tech accessories.',
+        image: '/merch/hoodie.png'
+      },
+      '/partners': {
+        title: 'Partnership & Sponsorship | KTF 2026',
+        description: 'Partner with KTF 2026 to reach thousands of young tech talents and innovators.',
+        image: '/networking.jpg'
+      },
+      '/history': {
+        title: 'Our Story | KTF 2026',
+        description: 'Discover the journey and evolution of the KWASU Tech Festival.',
+        image: '/events (4).jpg'
+      },
     };
 
-    document.title = titles[pathname] || 'KWASU Tech Festival | KTF 2026';
+    const currentSEO = seoData[pathname] || seoData['/'];
+    document.title = currentSEO.title;
+    
+    const metaDescription = document.querySelector('meta[name="description"]');
+    if (metaDescription) {
+      metaDescription.setAttribute('content', currentSEO.description);
+    }
+
+    // Also update OG and Twitter tags
+    const ogTitle = document.querySelector('meta[property="og:title"]');
+    if (ogTitle) ogTitle.setAttribute('content', currentSEO.title);
+    
+    const ogDescription = document.querySelector('meta[property="og:description"]');
+    if (ogDescription) ogDescription.setAttribute('content', currentSEO.description);
+
+    const ogImage = document.querySelector('meta[property="og:image"]');
+    if (ogImage) ogImage.setAttribute('content', `https://kwasutechfest.com${currentSEO.image}`);
+
+    const twitterTitle = document.querySelector('meta[property="twitter:title"]');
+    if (twitterTitle) twitterTitle.setAttribute('content', currentSEO.title);
+
+    const twitterDescription = document.querySelector('meta[property="twitter:description"]');
+    if (twitterDescription) twitterDescription.setAttribute('content', currentSEO.description);
+
+    const twitterImage = document.querySelector('meta[property="twitter:image"]');
+    if (twitterImage) twitterImage.setAttribute('content', `https://kwasutechfest.com${currentSEO.image}`);
+
+    const canonical = document.querySelector('link[rel="canonical"]');
+    if (canonical) canonical.setAttribute('href', `https://kwasutechfest.com${pathname}`);
+
   }, [pathname]);
 
   return null;

@@ -6,7 +6,7 @@ import { Section } from '../components/layout/Section';
 
 export default function Partners() {
   return (
-    <motion.div
+    <motion.main
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
@@ -46,6 +46,6 @@ export default function Partners() {
             <span className="text-[140px] font-display font-black tracking-tighter text-primary select-none opacity-5">PARTNERS</span>
          </div>
       </Section>
-    </motion.div>
+    </motion.main>
   );
 }

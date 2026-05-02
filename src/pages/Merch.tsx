@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function Merch() {
   return (
-    <div className="bg-background">
+    <main className="bg-background">
       <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
@@ -31,6 +31,6 @@ export default function Merch() {
            </div>
         </Section>
       </motion.div>
-    </div>
+    </main>
   );
 }

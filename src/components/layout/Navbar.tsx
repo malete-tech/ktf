@@ -30,6 +30,7 @@ export function Navbar() {
             link.isExternal ? (
               <a 
                 key={link.name} 
+                id={`nav-link-${link.name.toLowerCase().replace(/\s+/g, '-')}`}
                 href={link.href} 
                 className="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors tracking-wide"
               >
@@ -38,6 +39,7 @@ export function Navbar() {
             ) : (
               <Link 
                 key={link.name} 
+                id={`nav-link-${link.name.toLowerCase().replace(/\s+/g, '-')}`}
                 to={link.href} 
                 className="text-sm font-semibold text-on-surface-variant hover:text-primary transition-colors tracking-wide"
               >
@@ -49,11 +51,12 @@ export function Navbar() {
 
         <div className="flex items-center space-x-4">
           <Link to="/register">
-            <Button size="md" className="hidden sm:inline-flex uppercase tracking-widest text-xs font-bold">Get Access</Button>
+            <Button id="nav-cta-desktop" size="md" className="hidden sm:inline-flex uppercase tracking-widest text-xs font-bold">Get Access</Button>
           </Link>
           
           {/* Mobile Menu Toggle */}
           <button 
+            id="mobile-menu-toggle"
             className="md:hidden p-2 text-on-surface-variant hover:text-primary transition-colors"
             onClick={() => setIsOpen(!isOpen)}
           >
@@ -76,6 +79,7 @@ export function Navbar() {
                 link.isExternal ? (
                   <a 
                     key={link.name} 
+                    id={`mobile-nav-link-${link.name.toLowerCase().replace(/\s+/g, '-')}`}
                     href={link.href} 
                     className="text-3xl font-bold text-primary hover:text-secondary transition-colors"
                     onClick={() => setIsOpen(false)}
@@ -85,6 +89,7 @@ export function Navbar() {
                 ) : (
                   <Link 
                     key={link.name} 
+                    id={`mobile-nav-link-${link.name.toLowerCase().replace(/\s+/g, '-')}`}
                     to={link.href} 
                     className="text-3xl font-bold text-primary hover:text-secondary transition-colors"
                     onClick={() => setIsOpen(false)}
@@ -95,7 +100,7 @@ export function Navbar() {
               ))}
               <div className="pt-8">
                  <Link to="/register" onClick={() => setIsOpen(false)}>
-                    <Button size="lg" className="w-full uppercase tracking-widest font-bold">Get Access Permit</Button>
+                    <Button id="nav-cta-mobile" size="lg" className="w-full uppercase tracking-widest font-bold">Get Access Permit</Button>
                  </Link>
               </div>
             </nav>
