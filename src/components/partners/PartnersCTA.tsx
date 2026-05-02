@@ -156,7 +156,7 @@ export function PartnersCTA() {
                   <Button 
                     type="submit"
                     loading={isSubmitting}
-                    className="w-full h-20 bg-primary text-white hover:bg-primary/90 rounded-none uppercase tracking-[0.4em] font-bold text-xs mt-8 shadow-2xl transition-all"
+                    className="w-full mt-8"
                   >
                     Submit Inquiry
                     <ArrowRight size={16} className="ml-4" />

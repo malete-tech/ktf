@@ -21,11 +21,11 @@ export function Footer() {
 
           <div>
             <h4 className="text-sm font-bold text-white uppercase tracking-wider mb-4">Connect</h4>
-            <ul className="space-y-2 text-on-surface-variant">
-              <li><a href="#" className="hover:text-primary transition-colors">Twitter / X</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">LinkedIn</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Instagram</a></li>
-              <li><a href="#" className="hover:text-primary transition-colors">Contact Us</a></li>
+            <ul className="space-y-2 text-on-surface-variant text-sm">
+              <li><a href="https://x.com/MaleteTech" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Twitter / X</a></li>
+              <li><a href="https://instagram.com/malete.tech" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">Instagram</a></li>
+              <li><a href="https://tiktok.com/@malete.tech" target="_blank" rel="noopener noreferrer" className="hover:text-primary transition-colors">TikTok</a></li>
+              <li><a href="mailto:contact@malete.tech" className="hover:text-primary transition-colors">Contact Us</a></li>
             </ul>
           </div>
         </div>

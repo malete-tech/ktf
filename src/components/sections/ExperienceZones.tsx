@@ -142,11 +142,11 @@ export function ExperienceZones() {
         
         {/* Global Experience CTA */}
         <div className="mt-20 text-center">
-           <Link to="/experience">
+           <Link to="/experience" className="w-full sm:w-auto">
               <Button 
                 variant="secondary" 
                 size="lg" 
-                className="px-12 h-14 rounded-none uppercase tracking-[0.2em] font-bold text-xs border-white/20 text-white hover:border-emerald-500 hover:text-emerald-400 transition-all duration-500"
+                className="w-full sm:w-auto px-12 bg-transparent border-white/20 text-white hover:border-emerald-500 hover:text-emerald-400"
               >
                 Explore Detailed Journey
               </Button>

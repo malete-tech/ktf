@@ -32,7 +32,7 @@ export function MerchCTA() {
         <div className="flex flex-col sm:flex-row gap-8 justify-center items-center">
            <Button 
                 size="lg" 
-                className="w-full sm:w-auto px-20 h-20 bg-white text-primary hover:bg-white/95 rounded-none uppercase tracking-[0.3em] font-bold text-sm shadow-2xl shadow-white/10 transition-all duration-300 transform hover:scale-105"
+                className="w-full sm:w-auto px-20 bg-white text-primary hover:bg-white/95"
                 onClick={scrollToProducts}
            >
              Shop Now
@@ -40,7 +40,7 @@ export function MerchCTA() {
            <Button 
                 variant="secondary"
                 size="lg" 
-                className="w-full sm:w-auto px-20 h-20 border-white/20 text-white hover:bg-white/10 rounded-none uppercase tracking-[0.3em] font-bold text-sm transition-all duration-300 transform hover:scale-105"
+                className="w-full sm:w-auto px-20 border-white/20 text-white hover:border-white"
                 onClick={scrollToProducts}
            >
              View All Products

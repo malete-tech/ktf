@@ -8,6 +8,7 @@ import { Experience } from './pages/Experience';
 import { Awards } from './pages/Awards';
 import Merch from './pages/Merch';
 import Partners from './pages/Partners';
+import { History } from './pages/History';
 
 function ScrollToTop() {
   const { pathname } = useLocation();
@@ -30,6 +31,7 @@ function PageTitleManager() {
       '/awards': 'Awards & Nominations | KTF 2025',
       '/merch': 'Official Merchandise | KTF 2025',
       '/partners': 'Partnership & Sponsorship | KTF 2025',
+      '/history': 'Our Story | KTF 2025',
     };
 
     document.title = titles[pathname] || 'KWASU Tech Festival | KTF 2025';
@@ -51,6 +53,7 @@ function App() {
         <Route path="/awards" element={<Awards />} />
         <Route path="/merch" element={<Merch />} />
         <Route path="/partners" element={<Partners />} />
+        <Route path="/history" element={<History />} />
       </Routes>
       <Footer />
     </div>

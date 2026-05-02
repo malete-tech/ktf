@@ -41,7 +41,7 @@ function ScrambledText({ text, delay = 0 }: { text: string; delay?: number }) {
 
 export function Hero() {
   return (
-    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-background pt-20">
+    <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-background pt-32">
       {/* Moving Technical Grid Background */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.03]">
         <div className="absolute inset-x-0 top-0 h-full w-full bg-[linear-gradient(to_right,#002519_1px,transparent_1px),linear-gradient(to_bottom,#002519_1px,transparent_1px)] bg-[size:40px_40px] animate-grid-flow" />
@@ -96,12 +96,12 @@ export function Hero() {
             className="flex flex-col sm:flex-row items-center justify-center gap-6 pt-16"
           >
             <Link to="/register">
-              <Button size="lg" className="px-12 h-16 text-sm font-bold uppercase tracking-[0.2em] rounded-none border border-primary hover:bg-primary hover:text-white transition-all duration-300">
+              <Button size="lg" className="px-12 text-sm font-bold uppercase tracking-[0.2em] border border-primary">
                 Get Involved
               </Button>
             </Link>
             <Link to="/experience">
-              <Button variant="secondary" size="lg" className="px-12 h-16 text-sm font-bold uppercase tracking-[0.2em] rounded-none border border-outline-variant/30 hover:border-primary transition-all duration-300">
+              <Button variant="secondary" size="lg" className="px-12 text-sm font-bold uppercase tracking-[0.2em] border border-outline-variant/30">
                 The Experience
               </Button>
             </Link>

@@ -37,7 +37,7 @@ export function PartnersHero() {
           <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
             <Button 
                 size="lg" 
-                className="w-full sm:w-auto px-20 h-20 bg-white text-primary hover:bg-white/95 rounded-none uppercase tracking-[0.3em] font-bold text-sm shadow-2xl transition-all duration-300 transform hover:scale-105"
+                className="w-full sm:w-auto px-20 bg-white text-primary hover:bg-white/90"
                 onClick={scrollToContact}
             >
               Request Pitch Deck
@@ -45,7 +45,7 @@ export function PartnersHero() {
             <Button 
                 variant="secondary"
                 size="lg" 
-                className="w-full sm:w-auto px-20 h-20 border-white/20 text-white hover:bg-white/10 rounded-none uppercase tracking-[0.3em] font-bold text-sm transition-all duration-300 transform hover:scale-105 bg-transparent"
+                className="w-full sm:w-auto px-20 bg-transparent text-white border-white/20 hover:bg-white/10"
                 onClick={() => document.getElementById('packages')?.scrollIntoView({ behavior: 'smooth' })}
             >
               View Packages

@@ -34,7 +34,7 @@ export function AwardHero() {
           
           <Button 
               size="lg" 
-              className="px-20 h-20 bg-primary text-white hover:bg-primary/90 rounded-none uppercase tracking-[0.3em] font-bold text-sm shadow-2xl shadow-primary/20 transition-all duration-300 transform hover:scale-105"
+              className="px-20"
               onClick={scrollToForm}
           >
             Submit a Nomination

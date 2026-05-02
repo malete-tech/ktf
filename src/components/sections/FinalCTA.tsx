@@ -12,11 +12,11 @@ export function FinalCTA() {
         </h2>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-          <Link to="/register">
-            <Button size="lg" className="px-10 h-14 w-full sm:w-auto rounded-none uppercase tracking-widest font-bold">Register Interest</Button>
+          <Link to="/register" className="w-full sm:w-auto">
+            <Button size="lg" className="px-10 w-full sm:w-auto uppercase tracking-widest font-bold">Register Interest</Button>
           </Link>
-          <Link to="/experience">
-            <Button variant="secondary" size="lg" className="px-10 h-14 w-full sm:w-auto rounded-none uppercase tracking-widest font-bold border-outline-variant/30">The Experience</Button>
+          <Link to="/experience" className="w-full sm:w-auto">
+            <Button variant="secondary" size="lg" className="px-10 w-full sm:w-auto uppercase tracking-widest font-bold">The Experience</Button>
           </Link>
         </div>
       </div>

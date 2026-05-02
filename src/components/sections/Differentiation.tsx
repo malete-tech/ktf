@@ -83,10 +83,13 @@ function InteractiveGlassCard({ data, isActive, onToggle }: { data: typeof CARDS
               </p>
               
               <div className="mt-auto pt-4 border-t border-white/10">
-                <Link to="/register" className="flex items-center space-x-3 bg-white/10 hover:bg-white/20 transition-all px-4 py-2 mt-4 rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-md border border-white/10 group-hover:border-white/20 w-fit">
-                  <span className="ml-2">Get Started</span>
-                  <div className="bg-white text-black rounded-full p-1.5 transition-transform group-hover:-rotate-45 ml-4">
-                    <ArrowRight size={14} />
+                <Link to="/register" className="relative group flex items-center space-x-3 bg-white/10 hover:bg-white/20 transition-all px-6 py-3 mt-4 rounded-md text-[10px] font-bold uppercase tracking-widest backdrop-blur-md border border-white/10 overflow-hidden w-fit">
+                  {/* Shimmer overlay */}
+                  <div className="absolute inset-0 w-[300%] h-full bg-gradient-to-r from-transparent via-white/10 to-transparent -translate-x-full group-hover:animate-shimmer pointer-events-none transition-transform" />
+                  
+                  <span className="relative z-10">Get Started</span>
+                  <div className="relative z-10 bg-white text-black rounded-full p-1.5 transition-transform group-hover:-rotate-45 ml-2">
+                    <ArrowRight size={12} />
                   </div>
                 </Link>
               </div>

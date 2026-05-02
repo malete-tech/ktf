@@ -156,9 +156,9 @@ export function Register() {
   };
 
   return (
-    <div className="bg-background pt-32 pb-24 min-h-screen">
+    <div className="bg-background pb-24 min-h-screen">
       {/* 1. HERO SECTION */}
-      <section className="container mx-auto px-4 mb-24 max-w-7xl">
+      <section className="container mx-auto px-4 pt-32 mb-24 max-w-7xl">
         <div className="max-w-3xl">
           <motion.div 
             initial={{ opacity: 0, x: -20 }}
@@ -195,7 +195,7 @@ export function Register() {
           >
              <Button 
                 size="lg" 
-                className="rounded-none px-10 h-16 uppercase tracking-[0.2em] font-bold"
+                className="px-10 uppercase tracking-[0.2em] font-bold"
                 onClick={() => document.getElementById('permits')?.scrollIntoView({ behavior: 'smooth' })}
               >
                Select Your Permit
@@ -279,7 +279,7 @@ export function Register() {
               <Button 
                 onClick={() => handlePermitAction(permit)}
                 variant={permit.requiresPreForm ? 'secondary' : 'primary'}
-                className="w-full rounded-none h-12 uppercase tracking-widest text-xs font-bold"
+                className="w-full h-12 uppercase tracking-widest text-xs font-bold"
               >
                 {permit.requiresPreForm ? 'Apply to Participate' : 'Claim Permit'}
               </Button>
@@ -364,7 +364,7 @@ export function Register() {
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center pt-8">
                 <Button 
                   size="lg" 
-                  className="w-full sm:w-auto px-16 h-16 rounded-none uppercase tracking-widest font-bold"
+                  className="w-full sm:w-auto px-16 uppercase tracking-widest font-bold"
                   onClick={() => window.location.href = '/register?type=general'}
                 >
                   Register Now
@@ -372,7 +372,7 @@ export function Register() {
                 <Button 
                   variant="secondary" 
                   size="lg" 
-                  className="w-full sm:w-auto px-16 h-16 rounded-none uppercase tracking-widest font-bold bg-transparent"
+                  className="w-full sm:w-auto px-16 uppercase tracking-widest font-bold bg-transparent"
                   onClick={() => document.getElementById('permits')?.scrollIntoView({ behavior: 'smooth' })}
                 >
                   Explore Permits
@@ -501,14 +501,14 @@ export function Register() {
                         type="button"
                         variant="secondary"
                         onClick={() => setShowPreForm(false)}
-                        className="flex-1 h-14 rounded-none uppercase tracking-widest font-bold"
+                        className="flex-1 uppercase tracking-widest font-bold"
                       >
                         Cancel
                       </Button>
                       <Button 
                         type="submit" 
                         loading={isSubmitting}
-                        className="flex-[2] h-14 rounded-none uppercase tracking-widest font-bold"
+                        className="flex-[2] uppercase tracking-widest font-bold"
                       >
                         Continue
                       </Button>

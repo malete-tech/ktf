@@ -2,8 +2,8 @@ import { motion } from 'framer-motion';
 import { Button } from '../ui/Button';
 
 export function MerchHero() {
-  const scrollToProducts = () => {
-    document.getElementById('product-grid')?.scrollIntoView({ behavior: 'smooth' });
+  const scrollToExhibition = () => {
+    document.getElementById('exhibition')?.scrollIntoView({ behavior: 'smooth' });
   };
 
   return (
@@ -35,10 +35,10 @@ export function MerchHero() {
           
           <Button 
               size="lg" 
-              className="px-20 h-20 bg-primary text-white hover:bg-primary/90 rounded-none uppercase tracking-[0.3em] font-bold text-sm shadow-2xl shadow-primary/20 transition-all duration-300 transform hover:scale-105"
-              onClick={scrollToProducts}
+              className="px-20"
+              onClick={scrollToExhibition}
           >
-            Explore Merch
+            Explore the Collection
           </Button>
         </motion.div>
       </div>

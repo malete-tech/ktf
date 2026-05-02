@@ -31,7 +31,7 @@ export function AwardCTA() {
         
         <Button 
             size="lg" 
-            className="px-20 h-20 bg-white text-primary hover:bg-white/95 rounded-none uppercase tracking-[0.3em] font-bold text-sm shadow-2xl shadow-white/10 transition-all duration-300 transform hover:scale-105"
+            className="px-20 bg-white text-primary hover:bg-white/90"
             onClick={scrollToForm}
         >
           Submit Nomination

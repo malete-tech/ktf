@@ -11,11 +11,12 @@ export function Navbar() {
     { name: 'Experience', href: '/experience', isExternal: false },
     { name: 'Awards', href: '/awards', isExternal: false },
     { name: 'Merchandise', href: '/merch', isExternal: false },
-    { name: 'Partners', href: '/partners', isExternal: false }
+    { name: 'Partners', href: '/partners', isExternal: false },
+    { name: 'History', href: '/history', isExternal: false }
   ];
 
   return (
-    <header className="sticky top-0 z-[100] w-full bg-background/80 backdrop-blur-md border-b border-outline-variant/30">
+    <header className="fixed top-0 left-0 right-0 z-[100] w-full bg-background/80 backdrop-blur-md border-b border-outline-variant/30">
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
         <div className="flex items-center">
           <Link to="/" className="flex-shrink-0">
@@ -48,7 +49,7 @@ export function Navbar() {
 
         <div className="flex items-center space-x-4">
           <Link to="/register">
-            <Button size="md" className="hidden sm:inline-flex rounded-none uppercase tracking-widest text-xs font-bold">Get Access</Button>
+            <Button size="md" className="hidden sm:inline-flex uppercase tracking-widest text-xs font-bold">Get Access</Button>
           </Link>
           
           {/* Mobile Menu Toggle */}
@@ -94,7 +95,7 @@ export function Navbar() {
               ))}
               <div className="pt-8">
                  <Link to="/register" onClick={() => setIsOpen(false)}>
-                    <Button size="lg" className="w-full rounded-none uppercase tracking-widest font-bold">Get Access Permit</Button>
+                    <Button size="lg" className="w-full uppercase tracking-widest font-bold">Get Access Permit</Button>
                  </Link>
               </div>
             </nav>

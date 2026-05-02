@@ -10,7 +10,7 @@ export default function Partners() {
       initial={{ opacity: 0 }}
       animate={{ opacity: 1 }}
       transition={{ duration: 0.5 }}
-      className="bg-background pt-20"
+      className="bg-background"
     >
       <PartnersHero />
       

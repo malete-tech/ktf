@@ -5,6 +5,15 @@
 @tailwind utilities;
 
 @layer base {
+  @keyframes shimmer {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(100%); }
+  }
+  
+  .animate-shimmer {
+    animation: shimmer 1.5s infinite;
+  }
+
   html, body {
     @apply bg-background text-on-surface font-body antialiased;
     overflow-x: clip;

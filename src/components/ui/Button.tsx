@@ -14,19 +14,22 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
         ref={ref}
         disabled={props.disabled || loading}
         className={cn(
-          'inline-flex items-center justify-center rounded-lg font-body font-medium transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:opacity-50 disabled:pointer-events-none relative',
+          'inline-flex items-center justify-center rounded-md font-body font-medium transition-all duration-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary disabled:opacity-50 disabled:pointer-events-none relative overflow-hidden active:scale-[0.98] group',
           {
-            'bg-primary text-[#ffffff] hover:bg-secondary hover:text-white': variant === 'primary',
-            'bg-surface border border-outline-variant text-primary hover:bg-surface-container-low': variant === 'secondary',
-            'bg-transparent text-primary hover:underline': variant === 'tertiary',
-            'h-9 px-4 text-sm': size === 'sm',
-            'h-11 px-6': size === 'md',
-            'h-14 px-8 text-lg': size === 'lg',
+            'bg-primary text-white hover:shadow-[0_10px_40px_rgba(0,37,25,0.3)] hover:-translate-y-0.5': variant === 'primary',
+            'bg-transparent border border-outline-variant text-primary hover:bg-primary/5 hover:border-primary/40 hover:-translate-y-0.5': variant === 'secondary',
+            'bg-transparent text-primary hover:text-secondary': variant === 'tertiary',
+            'h-9 px-5 text-[10px] font-bold uppercase tracking-[0.1em]': size === 'sm',
+            'h-12 px-8 text-xs font-bold uppercase tracking-[0.15em]': size === 'md',
+            'h-16 px-12 text-sm font-bold uppercase tracking-[0.2em]': size === 'lg',
           },
           className
         )}
         {...props}
       >
+        {/* Shimmer / Loading Hover Effect Overlay */}
+        <div className="absolute inset-0 w-[300%] h-full bg-gradient-to-r from-transparent via-white/20 to-transparent -translate-x-full group-hover:animate-shimmer pointer-events-none transition-transform" />
+        
         {loading && (
           <div className="absolute inset-0 flex items-center justify-center bg-inherit rounded-inherit">
             <svg 
@@ -40,7 +43,12 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
             </svg>
           </div>
         )}
-        <span className={cn(loading && 'opacity-0')}>{children}</span>
+        <span className={cn(
+          "relative z-10 flex items-center justify-center gap-3 transition-opacity duration-300",
+          loading && 'opacity-0'
+        )}>
+          {children}
+        </span>
       </button>
     );
   }

@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export function ExperienceHero() {
   return (
-    <section className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden bg-background pt-20">
+    <section className="relative min-h-[90vh] flex flex-col items-center justify-center overflow-hidden bg-background pt-32">
       {/* Background System Flow Visual (Abstract) */}
       <div className="absolute inset-0 pointer-events-none opacity-[0.05]">
         <div className="absolute inset-x-0 top-1/4 h-px bg-primary/20 animate-pulse" />
@@ -46,7 +46,7 @@ export function ExperienceHero() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
             <Button 
                 size="lg" 
-                className="px-12 h-16 rounded-none uppercase tracking-[0.2em] font-bold text-xs"
+                className="px-12 bg-white text-primary hover:bg-white/90"
                 onClick={() => document.getElementById('philosophy')?.scrollIntoView({ behavior: 'smooth' })}
             >
               Explore the Experience
@@ -55,7 +55,7 @@ export function ExperienceHero() {
                 <Button 
                     variant="secondary" 
                     size="lg" 
-                    className="px-12 h-16 rounded-none uppercase tracking-[0.2em] font-bold text-xs border-outline-variant/30"
+                    className="px-12"
                 >
                   Get Access Permit
                 </Button>

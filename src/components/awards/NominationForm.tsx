@@ -217,15 +217,10 @@ export function NominationForm() {
             <Button 
                 type="submit" 
                 size="lg" 
-                disabled={status === 'loading'}
+                loading={status === 'loading'}
                 className="w-full sm:w-auto px-20 h-20 bg-primary text-white hover:bg-primary/90 rounded-none uppercase tracking-[0.3em] font-bold text-sm shadow-2xl shadow-primary/20 transition-all duration-300 transform hover:scale-105"
             >
-              {status === 'loading' ? (
-                <div className="flex items-center gap-4">
-                   <Loader2 size={18} className="animate-spin" />
-                   <span>Initializing Sync...</span>
-                </div>
-              ) : 'Submit Nomination'}
+              Submit Nomination
             </Button>
             <p className="mt-8 text-[10px] font-bold uppercase tracking-[0.4em] text-on-surface-variant/40">
                *Shortlisted nominees will be contacted via email.

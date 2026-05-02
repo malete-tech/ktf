@@ -27,13 +27,13 @@ export function ExperienceCTA() {
         </p>
         
         <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
-          <Link to="/register">
-            <Button size="lg" className="px-12 h-16 bg-white text-primary hover:bg-white/90 rounded-none uppercase tracking-[0.2em] font-bold text-xs">
+          <Link to="/register" className="w-full sm:w-auto">
+            <Button size="lg" className="w-full sm:w-auto px-12 bg-white text-primary hover:bg-white/90">
               Get Access
             </Button>
           </Link>
-          <Link to="/register">
-            <Button variant="secondary" size="lg" className="px-12 h-16 border-white/20 text-white hover:border-white transition-colors rounded-none uppercase tracking-[0.2em] font-bold text-xs">
+          <Link to="/register" className="w-full sm:w-auto">
+            <Button variant="secondary" size="lg" className="w-full sm:w-auto px-12 border-white/20 text-white hover:border-white">
               View Registration Options
             </Button>
           </Link>
