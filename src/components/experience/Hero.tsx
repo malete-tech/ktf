@@ -31,9 +31,7 @@ export function ExperienceHero() {
            animate={{ opacity: 1, y: 0 }}
            transition={{ duration: 0.8 }}
         >
-          <span className="text-[10px] font-mono tracking-[0.4em] text-primary/60 uppercase mb-8 block">
-            System Initialized // Phase: 02_EXPERIENCE
-          </span>
+
           <h1 className="text-6xl sm:text-8xl lg:text-[10rem] font-display font-medium leading-[0.9] tracking-tighter text-primary mb-12 uppercase">
             Step Into the <br />
             <span className="text-secondary italic">Experience.</span>
@@ -70,7 +68,7 @@ export function ExperienceHero() {
         transition={{ duration: 2, repeat: Infinity }}
         className="absolute bottom-12 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2 opacity-40"
       >
-        <span className="text-[8px] font-mono tracking-widest uppercase">Scroll to Initialize</span>
+
         <div className="w-px h-12 bg-primary/40" />
       </motion.div>
     </section>

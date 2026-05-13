@@ -39,7 +39,7 @@ export function MerchSocialProof() {
                className="p-12 border border-outline-variant/10 bg-white hover:bg-primary hover:text-white transition-all duration-700 rounded-none h-auto flex flex-col group justify-between"
              >
                 <div className="flex items-center justify-between mb-16">
-                   <span className="text-[10px] font-bold uppercase tracking-[0.4em] opacity-40 group-hover:opacity-100 group-hover:text-secondary transition-all">Verified_Member // {review.count}</span>
+
                    <div className="h-px w-12 bg-primary/20 group-hover:bg-white/40 transition-colors" />
                 </div>
                 

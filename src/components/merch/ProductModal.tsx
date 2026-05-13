@@ -62,11 +62,7 @@ export function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
 
             {/* Product Image Section */}
             <div className="relative w-full md:w-1/2 h-[400px] md:h-full bg-surface-container-low group overflow-hidden">
-               {product.isLimited && (
-                  <div className="absolute top-0 right-0 z-10 bg-secondary text-white text-[12px] font-bold px-6 py-3 uppercase tracking-[0.2em]">
-                    Limited_Edition
-                  </div>
-               )}
+
                <img 
                   src={product.image} 
                   alt={product.name} 
@@ -78,9 +74,7 @@ export function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
             {/* Product Details Section */}
             <div className="flex-1 p-10 md:p-16 flex flex-col justify-between overflow-y-auto">
               <div>
-                <span className="text-[10px] font-bold tracking-[0.6em] text-secondary uppercase mb-4 block">
-                   ITEM_DETAILS // {product.id}
-                </span>
+
                 <h2 className="text-4xl md:text-5xl font-display font-medium text-primary uppercase mb-8 tracking-tighter leading-tight">
                    {product.name}
                 </h2>

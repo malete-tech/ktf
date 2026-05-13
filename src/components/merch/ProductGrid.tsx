@@ -59,7 +59,7 @@ export function ProductGrid() {
     <Section id="product-grid" className="bg-background py-40 overflow-hidden">
       <div className="max-w-7xl mx-auto px-4">
         <div className="mb-24 text-center max-w-2xl mx-auto">
-          <h4 className="text-[10px] font-bold uppercase tracking-[0.4em] text-secondary mb-8">Ecosystem_Supply</h4>
+
           <h2 className="text-4xl sm:text-6xl font-display font-medium tracking-tight text-primary leading-[1.1] uppercase mb-12">
             Featured <br />
             <span className="text-secondary italic">Products.</span>

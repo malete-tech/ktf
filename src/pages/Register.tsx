@@ -166,7 +166,6 @@ export function Register() {
             className="flex items-center gap-2 mb-6"
           >
             <div className="h-2 w-2 bg-primary rounded-full animate-pulse" />
-            <span className="text-[10px] font-mono tracking-widest text-primary/60 uppercase">Registration Terminal v1.02</span>
           </motion.div>
           
           <motion.h1 
@@ -214,7 +213,7 @@ export function Register() {
               { step: '03', title: 'Register externally', desc: 'Complete your permit on our secure platform.' }
             ].map((step, idx) => (
               <div key={idx} className="relative">
-                <div className="text-[10px] font-mono text-primary/40 mb-2">{step.step} // STEP</div>
+
                 <h3 className="text-xl font-bold mb-4">{step.title}</h3>
                 <p className="text-on-surface-variant font-light border-l-2 border-primary/10 pl-4">{step.desc}</p>
                 {idx < 2 && (
@@ -264,17 +263,7 @@ export function Register() {
                 ))}
               </div>
 
-              {permit.limit && (
-                <div className="mb-8">
-                   <div className="flex justify-between text-[10px] font-mono text-primary/60 mb-2 uppercase tracking-wider">
-                      <span>Available Seats</span>
-                      <span>{permit.limit}</span>
-                   </div>
-                   <div className="h-0.5 w-full bg-surface-container-highest">
-                      <div className="h-full bg-secondary" style={{ width: permit.id === 'simulation' ? '90%' : '70%' }} />
-                   </div>
-                </div>
-              )}
+
               
               <Button 
                 onClick={() => handlePermitAction(permit)}
@@ -410,7 +399,7 @@ export function Register() {
 
               <div className="flex justify-between items-start mb-8">
                 <div>
-                  <div className="text-[10px] font-mono tracking-widest text-secondary mb-1 uppercase">Action Required</div>
+
                   <h3 className="text-2xl font-bold uppercase">{selectedPermit?.title} Intake</h3>
                 </div>
                 <button onClick={() => setShowPreForm(false)} className="hover:text-secondary transition-colors">

@@ -52,7 +52,7 @@ export function ProductExhibition() {
       <div className="max-w-7xl mx-auto px-4">
         {/* Header */}
         <div className="mb-32 text-center max-w-2xl mx-auto">
-          <h4 className="text-[10px] font-bold uppercase tracking-[0.4em] text-secondary mb-8">Culture_Showcase</h4>
+
           <h2 className="text-4xl sm:text-6xl font-display font-medium tracking-tight text-primary leading-[1.1] uppercase mb-12">
             The Exhibition <br />
             <span className="text-secondary italic">Gallery.</span>
@@ -101,9 +101,7 @@ export function ProductExhibition() {
 
               {/* Content Side */}
               <div className="flex-1 text-center lg:text-left">
-                <span className="text-[10px] font-mono tracking-[0.4em] text-secondary uppercase mb-6 block">
-                  Artifact // {product.id}
-                </span>
+
                 <h3 className="text-xs font-bold text-primary/40 uppercase tracking-widest mb-2 italic">
                   {product.tagline}
                 </h3>
@@ -114,10 +112,7 @@ export function ProductExhibition() {
                 <p className="text-on-surface-variant text-lg font-light leading-relaxed italic mb-12 max-w-md mx-auto lg:mx-0">
                   {product.description}
                 </p>
-                <div className="flex items-center gap-4 justify-center lg:justify-start">
-                   <div className="h-2 w-2 rounded-full bg-secondary animate-pulse" />
-                   <span className="text-[10px] font-bold uppercase tracking-widest text-primary/60">Functional Integrity Verified</span>
-                </div>
+
               </div>
             </motion.div>
           ))}
@@ -130,9 +125,7 @@ export function ProductExhibition() {
                 Access Official Store <ExternalLink size={20} className="ml-6" />
               </Button>
            </a>
-           <p className="mt-12 text-[10px] font-mono text-primary/40 uppercase tracking-widest">
-              Secure Checkout // Global Logistics // MTF_AUTHORIZED
-           </p>
+
         </div>
       </div>
     </Section>

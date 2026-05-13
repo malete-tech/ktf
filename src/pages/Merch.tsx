@@ -27,7 +27,6 @@ export default function Merch() {
         {/* FOOTER ACCENT */}
         <Section className="py-20 bg-background text-center opacity-10">
            <div className="max-w-4xl mx-auto border-t border-primary/20 pt-20">
-              <span className="text-[140px] font-display font-black tracking-tighter text-primary select-none opacity-5">MTF_MERCH</span>
            </div>
         </Section>
       </motion.div>

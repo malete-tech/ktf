@@ -20,9 +20,7 @@ export function MerchHero() {
            animate={{ opacity: 1, y: 0 }}
            transition={{ duration: 1, ease: "easeOut" }}
         >
-          <span className="text-[10px] font-bold tracking-[0.6em] text-secondary uppercase mb-8 block">
-             MTF_CULTURE // OFFICIAL_MERCH
-          </span>
+
           <h1 className="text-6xl sm:text-8xl lg:text-9xl font-display font-medium leading-[0.9] tracking-tighter text-primary mb-12 uppercase">
             Wear the <br />
             <span className="text-secondary italic">Ecosystem.</span>

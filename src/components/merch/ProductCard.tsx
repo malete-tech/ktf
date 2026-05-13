@@ -30,11 +30,7 @@ export function ProductCard({ product, onOpen }: ProductCardProps) {
       >
         {/* Product Image */}
         <div className="relative h-2/3 w-full bg-surface-container-low overflow-hidden">
-          {product.isLimited && (
-            <div className="absolute top-0 right-0 z-10 bg-secondary text-white text-[10px] font-bold px-4 py-2 uppercase tracking-[0.2em] shadow-lg">
-              Limited_Edition
-            </div>
-          )}
+
           <motion.img
             src={product.image}
             alt={product.name}
@@ -60,7 +56,7 @@ export function ProductCard({ product, onOpen }: ProductCardProps) {
           </div>
           
           <div className="flex items-center justify-between pt-6 border-t border-outline-variant/20">
-             <span className="text-[10px] font-bold uppercase tracking-[0.4em] opacity-40">MTF_Official</span>
+
              <Button variant="tertiary" size="sm" className="p-0 text-primary uppercase tracking-[0.2em] font-bold hover:bg-transparent hover:text-secondary group/btn">
                 <span>View Details</span>
                 <div className="h-px w-0 group-hover/btn:w-full bg-secondary transition-all" />

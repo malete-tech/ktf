@@ -30,7 +30,7 @@ export function MerchWhyBuy() {
            viewport={{ once: true }}
            transition={{ duration: 0.8 }}
         >
-          <h4 className="text-[10px] font-bold uppercase tracking-[0.4em] text-secondary mb-8">System_Values</h4>
+
           <h2 className="text-4xl sm:text-6xl font-display font-medium tracking-tight text-primary leading-[1.1] uppercase mb-12">
             Why the <br />
             <span className="text-secondary italic">Movement?</span>
@@ -97,10 +97,7 @@ export function MerchWhyBuy() {
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
            </div>
 
-           {/* Overlay Text */}
-           <div className="absolute bottom-20 left-0 z-30 bg-primary text-white px-8 py-4 uppercase tracking-[0.4em] text-[10px] font-bold">
-              Official_Supply_2026
-           </div>
+
 
            {/* Decorative Lines */}
            <div className="absolute top-0 right-0 p-12 opacity-40">

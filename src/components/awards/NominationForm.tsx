@@ -105,7 +105,7 @@ export function NominationForm() {
         <form onSubmit={handleSubmit} className="space-y-16">
           {/* Nominee Info */}
           <div className="space-y-10">
-            <h4 className="text-[10px] font-bold uppercase tracking-[0.4em] text-secondary border-b border-outline-variant/30 pb-4">01_Nominee_Information</h4>
+
             <div className="grid md:grid-cols-2 gap-10">
               <div className="space-y-4">
                 <label className="text-xs font-bold uppercase tracking-widest text-primary/60">Full Name</label>
@@ -145,7 +145,7 @@ export function NominationForm() {
 
           {/* Submission Info */}
           <div className="space-y-10">
-            <h4 className="text-[10px] font-bold uppercase tracking-[0.4em] text-secondary border-b border-outline-variant/30 pb-4">02_Submission_Details</h4>
+
             <div className="space-y-10">
               <div className="space-y-4">
                 <label className="text-xs font-bold uppercase tracking-widest text-primary/60">Award Category</label>
@@ -222,9 +222,7 @@ export function NominationForm() {
             >
               Submit Nomination
             </Button>
-            <p className="mt-8 text-[10px] font-bold uppercase tracking-[0.4em] text-on-surface-variant/40">
-               *Shortlisted nominees will be contacted via email.
-            </p>
+
           </div>
         </form>
       </div>
