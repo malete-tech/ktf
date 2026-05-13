@@ -63,14 +63,46 @@ export function MerchWhyBuy() {
            whileInView={{ opacity: 1, scale: 1 }}
            viewport={{ once: true }}
            transition={{ duration: 1, delay: 0.2 }}
-           className="relative group h-[600px] overflow-hidden border border-outline-variant/30 bg-surface-container-low flex items-center justify-center p-20"
+           className="relative h-[600px] flex items-center justify-center group"
         >
-           <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/5 group-hover:opacity-60 transition-opacity" />
-           <div className="relative z-10 text-center uppercase tracking-widest text-primary/10 select-none">
-              <span className="text-[120px] font-display">MTF</span>
-              <p className="text-[10px] font-bold tracking-[1em] mt-8">Official_Ecosystem_Supply</p>
-           </div>
+           {/* Collage Background Elements */}
+           <div className="absolute inset-0 bg-primary/5 rounded-none transform -rotate-1 opacity-20" />
            
+           {/* Image 1: Hoodie (Back/Large) */}
+           <div className="absolute top-10 left-10 w-2/3 aspect-[4/5] z-0 opacity-40 group-hover:opacity-100 transition-all duration-1000">
+              <img 
+                 src="/merch/hoodies 1.jpg" 
+                 alt="KTF Hoodie" 
+                 className="w-full h-full object-cover border border-primary/10 shadow-2xl"
+              />
+           </div>
+
+           {/* Image 2: T-Shirt 1 (Middle/Offset) */}
+           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/5 aspect-[4/5] z-10 rotate-3 group-hover:rotate-0 transition-all duration-1000">
+              <img 
+                 src="/merch/t-shirt 1 (1).png" 
+                 alt="KTF T-Shirt" 
+                 className="w-full h-full object-cover border border-white/20 shadow-2xl"
+              />
+              <div className="absolute inset-0 border border-primary/20 pointer-events-none" />
+           </div>
+
+           {/* Image 3: T-Shirt 2 (Front/Bottom) */}
+           <div className="absolute bottom-10 right-10 w-1/2 aspect-[4/5] z-20 -rotate-6 group-hover:rotate-0 transition-all duration-1000">
+              <img 
+                 src="/merch/t-shirt 1 (3).png" 
+                 alt="KTF Minimal T-Shirt" 
+                 className="w-full h-full object-cover border border-primary/10 shadow-2xl"
+              />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
+           </div>
+
+           {/* Overlay Text */}
+           <div className="absolute bottom-20 left-0 z-30 bg-primary text-white px-8 py-4 uppercase tracking-[0.4em] text-[10px] font-bold">
+              Official_Supply_2026
+           </div>
+
+           {/* Decorative Lines */}
            <div className="absolute top-0 right-0 p-12 opacity-40">
               <div className="w-1 h-32 bg-primary/20" />
            </div>

@@ -5,41 +5,44 @@ import { ProductModal } from './ProductModal';
 
 const PRODUCTS = [
   {
-    id: 'MTF-TS-01',
-    name: 'MTF Branded T-Shirt',
-    description: 'Minimalist tech-luxe design. 100% heavy cotton, oversized fit, screen-printed iconic logo. Engineered for high-stakes building.',
-    price: '12,500',
-    image: '/merch/tshirt.png',
+    id: 'KTF-HD-01',
+    name: 'KTF Official Hoodie',
+    description: 'Premium heavy-weight hoodie with official KTF branding. Engineered for the builders of the future ecosystem.',
+    price: '25,000',
+    image: '/merch/hoodies 1.jpg',
     isLimited: true
   },
   {
-    id: 'MTF-HD-02',
-    name: 'Tech Festival Hoodie',
-    description: 'Black heavy-weight fleece with a structured technical fit. Features the metallic KTF blueprint across the back.',
-    price: '28,000',
-    image: '/merch/hoodie.png',
+    id: 'KTF-TS-01',
+    name: 'KTF Tech T-Shirt (V1)',
+    description: 'The core KTF aesthetic in high-density print. A testament to technical excellence and student-led innovation.',
+    price: '10,000',
+    image: '/merch/t-shirt 1 (1).png',
+    isLimited: false
+  },
+  {
+    id: 'KTF-TS-02',
+    name: 'KTF Tech T-Shirt (V2)',
+    description: 'Signature KTF typography on premium cotton. Minimalist design for the modern innovator and creative logician.',
+    price: '10,000',
+    image: '/merch/t-shirt 1 (3).png',
+    isLimited: false
+  },
+  {
+    id: 'KTF-TB-01',
+    name: 'KTF Ecosystem Tote',
+    description: 'Durable, high-capacity canvas tote for your hardware and essentials. The nomad\'s companion for the tech ecosystem.',
+    price: '5,000',
+    image: '/merch/totebag.png',
+    isLimited: false
+  },
+  {
+    id: 'KTF-WB-01',
+    name: 'KTF Hydro Flask',
+    description: 'Insulated high-performance water bottle. Stay hydrated while you build the future of technology.',
+    price: '15,000',
+    image: '/merch/water bottle.png',
     isLimited: true
-  },
-  {
-    id: 'KTF-NB-03',
-    name: 'Tech Ecosystem Notebook',
-    description: 'Hardbound matte black notebook. 192 grid-lined pages for logic design and strategic planning. Features a blind-debossed KTF logo.',
-    price: '8,500',
-    image: '/merch/notebook.png'
-  },
-  {
-    id: 'MTF-SP-04',
-    name: 'Sticker Pack (v2.0)',
-    description: 'High-visibility laptop decals. Waterproof vinyl featuring tech humor, KTF branding, and ecosystem-specific coding icons.',
-    price: '3,500',
-    image: '/merch/stickers.png'
-  },
-  {
-    id: 'MTF-LS-05',
-    name: 'Tech Accessories Sleeve',
-    description: 'Premium dark-felt laptop sleeve. Minimalist protection with a signature MTF leather patch. Designed for 14-inch/16-inch laptops.',
-    price: '16,500',
-    image: '/merch/sleeve.png'
   }
 ];
 

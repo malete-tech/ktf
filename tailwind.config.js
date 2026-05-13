@@ -27,8 +27,8 @@ export default {
         'outline-variant': '#c0c9c2',
       },
       fontFamily: {
-        display: ['Ubuntu', 'sans-serif'],
-        body: ['Ubuntu', 'sans-serif']
+        display: ['Figtree', 'sans-serif'],
+        body: ['Figtree', 'sans-serif']
       },
       borderRadius: {
         xl: '0.75rem',

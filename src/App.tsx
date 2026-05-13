@@ -48,7 +48,7 @@ function PageTitleManager() {
       '/merch': {
         title: 'Official Merchandise | KTF 2026',
         description: 'Get your official KTF 2026 gear. Exclusive hoodies, tees, and tech accessories.',
-        image: '/merch/hoodie.png'
+        image: '/merch/hoodies 1.jpg'
       },
       '/partners': {
         title: 'Partnership & Sponsorship | KTF 2026',

@@ -5,41 +5,44 @@ import { ExternalLink } from 'lucide-react';
 
 const PRODUCTS = [
   {
-    id: 'MTF-TS-01',
-    name: 'MTF Branded T-Shirt',
-    description: 'Minimalist tech-luxe design. 100% heavy cotton, oversized fit, screen-printed iconic logo. Engineered for high-stakes building.',
-    tagline: 'The Builder\'s Uniform',
-    image: '/merch/tshirt.png',
-    isLimited: true
-  },
-  {
-    id: 'MTF-HD-02',
-    name: 'Tech Festival Hoodie',
-    description: 'Black heavy-weight fleece with a structured technical fit. Features the metallic KTF blueprint across the back.',
+    id: 'KTF-HD-01',
+    name: 'KTF Official Hoodie',
+    description: 'Premium heavy-weight hoodie with official KTF branding. Engineered for the builders of the future ecosystem.',
     tagline: 'Technical Armor',
-    image: '/merch/hoodie.png',
+    image: '/merch/hoodies 1.jpg',
     isLimited: true
   },
   {
-    id: 'KTF-NB-03',
-    name: 'Tech Ecosystem Notebook',
-    description: 'Hardbound matte black notebook. 192 grid-lined pages for logic design and strategic planning. Features a blind-debossed KTF logo.',
-    tagline: 'Strategic Intelligence',
-    image: '/merch/notebook.png'
+    id: 'KTF-TS-01',
+    name: 'KTF Tech T-Shirt (V1)',
+    description: 'The core KTF aesthetic in high-density print. A testament to technical excellence and student-led innovation.',
+    tagline: 'The Builder\'s Uniform',
+    image: '/merch/t-shirt 1 (1).png',
+    isLimited: false
   },
   {
-    id: 'MTF-SP-04',
-    name: 'Sticker Pack (v2.0)',
-    description: 'High-visibility laptop decals. Waterproof vinyl featuring tech humor, KTF branding, and ecosystem-specific coding icons.',
+    id: 'KTF-TS-02',
+    name: 'KTF Tech T-Shirt (V2)',
+    description: 'Signature KTF typography on premium cotton. Minimalist design for the modern innovator and creative logician.',
     tagline: 'Digital Identity',
-    image: '/merch/stickers.png'
+    image: '/merch/t-shirt 1 (3).png',
+    isLimited: false
   },
   {
-    id: 'MTF-LS-05',
-    name: 'Tech Accessories Sleeve',
-    description: 'Premium dark-felt laptop sleeve. Minimalist protection with a signature MTF leather patch. Designed for 14-inch/16-inch laptops.',
-    tagline: 'Hardware Shield',
-    image: '/merch/sleeve.png'
+    id: 'KTF-TB-01',
+    name: 'KTF Ecosystem Tote',
+    description: 'Durable, high-capacity canvas tote for your hardware and essentials. The nomad\'s companion for the tech ecosystem.',
+    tagline: 'Portable Storage',
+    image: '/merch/totebag.png',
+    isLimited: false
+  },
+  {
+    id: 'KTF-WB-01',
+    name: 'KTF Hydro Flask',
+    description: 'Insulated high-performance water bottle. Stay hydrated while you build the future of technology.',
+    tagline: 'Performance Hydration',
+    image: '/merch/water bottle.png',
+    isLimited: true
   }
 ];
 
@@ -61,7 +64,7 @@ export function ProductExhibition() {
         </div>
 
         <div className="flex justify-center mb-40 px-4">
-           <a href="https://your-store-url.com" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+           <a href="https://selar.com/m/maletetechforum" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
               <Button size="lg" className="w-full sm:w-auto px-16">
                 Visit Official Store <ExternalLink size={18} className="ml-4" />
               </Button>
@@ -91,7 +94,7 @@ export function ProductExhibition() {
                   <img 
                     src={product.image} 
                     alt={product.name} 
-                    className="w-full h-full object-cover grayscale hover:grayscale-0 scale-105 hover:scale-100 transition-all duration-1000"
+                    className="w-full h-full object-cover scale-105 hover:scale-100 transition-all duration-1000"
                   />
                 </div>
               </div>
@@ -122,7 +125,7 @@ export function ProductExhibition() {
 
         <div className="flex flex-col items-center mt-64 border-t border-outline-variant/20 pt-40 px-4">
            <h3 className="text-3xl font-display font-medium uppercase mb-12 text-primary text-center">Ready to Acquire?</h3>
-           <a href="https://your-store-url.com" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
+           <a href="https://selar.com/m/maletetechforum" target="_blank" rel="noopener noreferrer" className="w-full sm:w-auto">
               <Button size="lg" className="w-full sm:w-auto px-20">
                 Access Official Store <ExternalLink size={20} className="ml-6" />
               </Button>

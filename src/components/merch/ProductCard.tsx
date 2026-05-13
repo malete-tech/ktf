@@ -38,7 +38,7 @@ export function ProductCard({ product, onOpen }: ProductCardProps) {
           <motion.img
             src={product.image}
             alt={product.name}
-            className="w-full h-full object-cover grayscale group-hover:grayscale-0 group-hover:scale-110 transition-all duration-1000"
+            className="w-full h-full object-cover group-hover:scale-110 transition-all duration-1000"
           />
           <div className="absolute inset-0 bg-primary/5 opacity-0 group-hover:opacity-100 transition-opacity duration-700" />
         </div>

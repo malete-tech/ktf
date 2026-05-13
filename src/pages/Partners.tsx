@@ -28,12 +28,13 @@ export default function Partners() {
             the platform; you provide the fuel for the next generation of builders."
           </p>
           
-          <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-12 opacity-40 grayscale">
-             {/* Logo placeholders - keeping it editorial */}
-             <div className="h-12 flex items-center justify-center font-display font-bold text-2xl tracking-tighter">PARTNER_01</div>
-             <div className="h-12 flex items-center justify-center font-display font-bold text-2xl tracking-tighter">PARTNER_02</div>
-             <div className="h-12 flex items-center justify-center font-display font-bold text-2xl tracking-tighter">PARTNER_03</div>
-             <div className="h-12 flex items-center justify-center font-display font-bold text-2xl tracking-tighter">PARTNER_04</div>
+          <div className="mt-20 grid grid-cols-2 md:grid-cols-2 gap-12 max-w-lg mx-auto">
+             <div className="h-20 flex items-center justify-center">
+                <img src="/kwasu-partner.png" alt="KWASU" className="h-full w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+             </div>
+             <div className="h-20 flex items-center justify-center">
+                <img src="/mtf-partner.png" alt="MTF" className="h-full w-auto object-contain opacity-80 hover:opacity-100 transition-opacity" />
+             </div>
           </div>
         </div>
       </Section>

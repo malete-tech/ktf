@@ -28,8 +28,8 @@ export function ProductModal({ product, isOpen, onClose }: ProductModalProps) {
 
   const handleCheckout = () => {
     // General store link provided by user
-    const STORE_LINK = 'https://paystack.shop/mtf-merch'; // Placeholder or actual if known
-    window.location.href = STORE_LINK;
+    const STORE_LINK = 'https://selar.com/m/maletetechforum'; 
+    window.open(STORE_LINK, '_blank');
   };
 
   const isApparel = product.name.toLowerCase().includes('shirt') || product.name.toLowerCase().includes('hoodie');
